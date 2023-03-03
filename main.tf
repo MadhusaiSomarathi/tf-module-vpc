@@ -13,6 +13,3 @@ resource "aws_vpc" "main" {
 #  vpc_id = [for k, v in aws_vpc.main : v.id]
 #}
 
-output "vpc" {
- value = aws_vpc.main
-}
