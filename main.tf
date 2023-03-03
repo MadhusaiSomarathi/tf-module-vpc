@@ -12,5 +12,5 @@ resource "aws_vpc" "main" {
 #}
 
 output "vpc" {
-  value = aws_vpc.main[each.key]
+  value = aws_vpc.main
 }
