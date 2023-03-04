@@ -11,10 +11,6 @@ output "public_subnets" {
 #
 #}
 
-output "test" {
-  value = module.public_subnets
-}
-
 output "vpc_id" {
   value = aws_vpc.main.id
 }
