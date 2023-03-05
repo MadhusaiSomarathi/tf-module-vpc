@@ -1,5 +1,5 @@
 output "private_subnets" {
-  value = module.private_subnets
+  value = [for i, j in module.private_subnets : j.route_tables.id]
 }
 
 output "public_subnets" {
