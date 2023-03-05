@@ -1,5 +1,5 @@
 output "private_subnets" {
-  value = [for i, j in module.private_subnets : j.subnets.id]
+  value = [for i, j in module.private_subnets : j.subnets.*.id]
 }
 
 output "public_subnets" {
