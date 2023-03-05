@@ -18,9 +18,9 @@
 //  //  }
 //}
 
-#output "subnets" {
-#  value = aws_subnet.main
-#}
+output "subnets" {
+  value = aws_subnet.main
+}
 
 output "route_tables" {
   value = aws_route_table.aws_route_table
