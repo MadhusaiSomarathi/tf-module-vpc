@@ -12,7 +12,7 @@ output "public_subnets" {
 #}
 
 output "test" {
-  value = lookup(lookup(module.public_subnets, "public", null), "subnets", null)[0].id
+  value = lookup(module.public_subnets, "public", null)
 }
 
 output "vpc_id" {
